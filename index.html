@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png" sizes="16x16">
+</head>
+<body>
+    
+    <div class="center">
+        <div class="textOne">
+            <h1 id="hey">HEY...👋</h1>
+            <p><label id="ybt">Is your birthday today?</label></p>
+        </div>
+        
+        <div class="photos">
+            <button onclick="opened()" id="gift"><img src="Gift.svg" alt="gift"></button>
+            <img id="party" src="party.png" alt="party">
+            <img id="sad" src="sad.png" alt="sad">
+        </div>
+        
+        <div class="picking">
+            <button onclick="zgoda()" class="YesNo" id="yes">Yessir</button>
+            <button onclick="niezgoda()" class="YesNo" id="no">Nahhh</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
