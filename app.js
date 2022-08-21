@@ -1,4 +1,6 @@
 
+var explosion = new Audio('confetti.mp3');
+
 function niezgoda() {
     document.getElementById('ybt').innerHTML
     = 'That is a pitty, comeback here someday!';
@@ -26,6 +28,13 @@ function opened() {
     document.getElementById('yes').style.display = 'none';
     document.getElementById('no').style.display = 'none';
     document.getElementById('gift').style.display = 'none';
-    document.getElementById('party').style.display = 'block';
+    document.getElementById('beforeparty').style.display = 'block';
+
+    
+    setTimeout(() => {  
+            explosion.play();
+            document.getElementById('beforeparty').style.display = 'none';
+            document.getElementById('party').style.display = 'block';
+    ; }, 500);
 }
 
